@@ -1,0 +1,358 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: fit-content;
+    width: 100%;
+    color: white;
+    background-color: black ;
+    font-family: "gilroy";
+}
+
+*::selection{
+    background-color: rgb(36, 36, 36);
+    color: aqua;
+}
+
+#main{
+    overflow: hidden;    
+}
+
+.nav{
+    width: 100%;
+    height: 65px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 20px ;
+    text-transform: uppercase;
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* background-color: aquamarine; */
+}
+
+.menu{
+    display: none;
+    cursor: pointer;
+}
+
+.menu-screen{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    position:fixed;
+    top: -100%;
+    height: 100vh;
+    width: 100vw;
+    z-index: 234;
+    background-color: black;
+}
+
+.menu-screen a{
+    text-decoration: none;
+    color: white;
+}
+.menu-screen i{
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 16px;
+    font-size: 30px;
+}
+
+.nav-right{
+    display: flex;
+    gap: 40px;
+}
+
+.nav-right a{
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+    text-transform: capitalize;
+    font-family: 'Josefin Sans', sans-serif;
+    /* background-color: rgba(242, 242, 242, 0.641); */
+    padding: 4px 13px;
+    padding-top: 8px;
+    border-radius: 15px 7px 15px 7px;
+    transition: all ease .5s;
+}
+
+.nav-right a:hover{
+    background-color: rgba(255, 255, 255, 0.34);
+    color: rgb(0, 255, 255);
+}
+
+.welcome{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+    text-transform: uppercase;
+    font-size: 5vw;
+    line-height: .83;
+    padding: 0 20px;
+    /* background-color: cadetblue; */
+    height: calc(100vh - 65px);
+}
+
+.elem2{
+    display: flex;
+    align-items: center;
+}
+
+.capsule{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    min-width: 25vw;
+    height: 7vw;
+    margin: 0 1vw;
+    padding:0 3vw;
+    background-color: rgba(255, 255, 255, 0.34);
+    border-radius: 100px;
+    color: rgb(0, 255, 255);
+    text-transform: lowercase;
+}
+
+.dets{
+    display: none;
+    padding: 0 3vw 0 17vw;
+    align-items: end;
+}
+
+.dets p{
+    font-size: 5vw;
+    font-family: 'Sacramento', cursive;
+    text-align: right;
+    text-transform: lowercase;
+    opacity: .5;
+}
+
+.intro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    position: relative;
+    /* overflow: hidden; */
+}
+
+.intro-box{
+    color: rgb(255, 255, 255);
+    /* background-color: aqua; */
+    width: 60%;
+}
+
+.intro-box h1{
+    font-size: 10vw;
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 200;
+    font-style: italic;
+    line-height: 1.1;
+}
+
+.intro-box hr{
+    width: 80%;
+    margin-bottom: 3px;
+}
+
+.intro-box p{
+    font-size: 17px;
+}
+
+.intro-box h4{
+    font-weight: 100;
+    background-color: rgb(154, 154, 154);
+    width: fit-content;
+    padding: 3px 15px;
+    margin-top: 10px;
+    border-radius: 100px;
+}
+
+.cir1{
+    position: absolute;
+    background-color: rgba(174, 174, 174, 0.191);
+    border-radius: 50%;
+    padding: 100px;
+    width: 45vw;
+    height: 45vw;
+    left: -15vw;
+    bottom: 0;
+}
+
+.cir2{
+    position: absolute;
+    background-color: rgba(174, 174, 174, 0.191);
+    border-radius: 50%;
+    padding: 100px;
+    width: 45vw;
+    height: 45vw;
+    right: -20vw;
+    top: 0;
+}
+
+.expo-content{
+    width: 60%;
+}
+
+.expo{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.expo h1{
+    font-size: 4vw;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    opacity: .4;
+}
+
+.expo h3{
+    font-family: 'Josefin Sans', sans-serif;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    font-weight: 100;
+    font-size: 20px;
+    letter-spacing: -1px;
+    word-spacing: -2px;
+}
+
+.expo-content p{
+    font-size: 16px;
+    color: rgb(218, 218, 218);
+    font-family: 'Inter', sans-serif; 
+}
+
+.des{
+    position: absolute;
+    top: 10vw;
+    right: 10vw;
+    display: flex;
+    animation: blink infinite linear 2s;
+}
+
+.circle{
+
+    height: 100px;
+    width: 100px;
+    background-color: rgb(176, 87, 87);
+}
+.triangle{
+    rotate: 90deg;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid rgb(88, 88, 88);
+}
+
+.projects{
+    width: 100%;
+    height: 100vh;
+    background-color: cadetblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-items{
+    height: 90%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(93, 93, 0);
+}
+
+.project-items h1{
+    padding: 5px 20px;
+    border-radius: 10px;
+    margin: 5px 0;
+    box-shadow: 0 0 10px 2px aqua;
+}
+
+.project-list{
+    height: 100%;
+    width: 100%;
+    gap: 20px;
+    padding: 30px 20px;
+    display: flex;
+}
+
+.project-list a{
+    padding: 5px 20px;
+    border-radius: 10px;
+    /* border: 1px solid aqua; */
+    box-shadow: 0 0 10px rgb(255, 64, 47);
+    height: fit-content;
+    font-size: 15px;
+}
+
+@media (max-width:600px) {
+    .nav-right{
+        display: none;
+    }
+    .nav-left h1{
+        font-size: 20px;
+    }
+    .menu{
+        display: flex;
+    }
+    .dets{
+        display: flex;
+    }
+    .intro{
+        height: 70vh;
+    }
+    .intro-box p{
+        font-size: 12px;
+    }
+    .intro-box{
+        width: 80%;
+    }
+    .expo-content p{
+        font-size: 10px;   
+    }
+    .expo-content{
+        width: 80%;
+    }
+    .expo h1{
+        font-size: 9vw;
+    }
+    .des{
+        scale: .5;
+        right: 2vw;
+        top: 0;
+    }
+    .expo{
+        height: 75vh;
+    }
+    
+}
+
+@keyframes blink {
+    0%{
+        opacity: .8;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: .8;
+    }
+}
