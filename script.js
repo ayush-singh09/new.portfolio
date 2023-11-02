@@ -21,15 +21,26 @@ var menuScreen = document.querySelector(".menu-screen")
 var close = document.querySelector(".ri-close-fill")
 
 menubtn.addEventListener('click',function(){
-    gsap.to(".menu-screen",{
-        top:0,
-    })
+    menuScreen.style.display = "flex"
+    
+
+    setTimeout(function(){
+        gsap.to(".menu-screen",{
+            top:0,
+        })
+    },100)
     // menuScreen.style.top = "0"
 });
 
 close.addEventListener('click',function(){
-    // gsap.to(".menu-screen",{
-    //     top:-100
-    // })
-    menuScreen.style.top = "-100%"
+    gsap.to(".menu-screen",{
+        top:-80 + "%"
+    })
+
+    setTimeout(function(){
+        menuScreen.style.display = "none"
+    },100)
+    // menuScreen.style.top = "-100%"
 });
+
+// menuScreen.style.height = window.innerHeight + 'px';
