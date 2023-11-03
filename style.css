@@ -115,7 +115,8 @@ html, body{
     height: 7vw;
     margin: 0 1vw;
     padding:0 3vw;
-    background-color: rgba(255, 255, 255, 0.34);
+    background-color: white;
+    opacity:.3;
     border-radius: 100px;
     color: rgb(0, 255, 255);
     text-transform: lowercase;
@@ -181,7 +182,8 @@ html, body{
 
 .cir1{
     position: absolute;
-    background-color: rgba(174, 174, 174, 0.191);
+    background-color: white;
+    opacity:.2;
     border-radius: 50%;
     padding: 100px;
     width: 45vw;
@@ -192,7 +194,8 @@ html, body{
 
 .cir2{
     position: absolute;
-    background-color: rgba(174, 174, 174, 0.191);
+    background-color: white;
+    opacity:.2;
     border-radius: 50%;
     padding: 100px;
     width: 45vw;
