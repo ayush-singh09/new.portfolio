@@ -347,6 +347,9 @@ html, body{
 }
 
 @media (max-width:600px) {
+    .cur{
+        display:none;
+    }
     .nav-right{
         display: none;
     }
