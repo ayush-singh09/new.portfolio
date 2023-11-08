@@ -12,6 +12,19 @@ const scroll = new LocomotiveScroll({
     smooth: true
 });
 
+function firstPageAnimation(){
+    var tl = gsap.timeline();
+    tl.to('.up',{
+        translateY:0,
+        ease: Expo.easeInOut,
+        duration: 3,
+        delay: -1,
+        stagger: .2
+    })
+}
+
+firstPageAnimation();
+
 window.addEventListener("mousemove",function(dets){
 
     gsap.to(".cur",{
