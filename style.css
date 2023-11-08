@@ -109,6 +109,14 @@ html, body{
     height: calc(100vh - 65px);
 }
 
+.elem{
+    overflow: hidden;
+}
+
+.up{
+    transform: translate(0,110%);
+}
+
 .pic{
     position: relative;
     height: 35vw;
